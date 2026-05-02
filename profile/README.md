@@ -39,9 +39,9 @@ For the full design, start with the [protocol overview RFC](https://github.com/s
 |------|--------|------------|
 | [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs) | 🟢 Active | RFCs, JSON Schemas, worked examples — the protocol itself. |
 | [`shadownet-go`](https://github.com/shadownet-protocol/shadownet-go) | 🟢 Active | Go SDK + reference SCA, SNS, and CLI binaries. v0.1 surface complete. |
-| `shadownet-py` | 🟢 Active | Python SDK. v0.1 surface complete; consumed by `hermes-social` and `shadownet-cloud`. |
+| [`shadownet-py`](https://github.com/shadownet-protocol/shadownet-py) | 🟢 Active | Python SDK. v0.1 surface complete; consumed by `hermes-social` and `shadownet-cloud`. |
 | [`hermes-social`](https://github.com/meghancampbel9/hermes-social) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
-| `shadownet-conformance` | 🌱 Early | Wire-level interop test suite. Runs against any Shadownet implementation. |
+| [`shadownet-conformance`](https://github.com/shadownet-protocol/shadownet-conformance) | 🌱 Early | Wire-level interop test suite. Runs against any Shadownet implementation. |
 | `shadownet-ts` | 🟡 Planned | TypeScript SDK for browser + Node. |
 | `shadownet-cloud` | 🟡 Planned | First-provider deployment: signup, Shadowname allocation, multi-tenant Sidecar host. |
 
