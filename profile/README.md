@@ -13,7 +13,7 @@ AI agents are getting smarter every month — but they're brilliant hermits. You
 
 ## 🧭 Core Tenets
 
-- **Coordination over capability** — we don't build LLMs; we build the infrastructure that lets them collaborate.
+- **Coordination over capability** — we don't build LLMs and we don't build agents; we build the infrastructure that lets them find each other and collaborate.
 - **Local-first privacy** — your agent's memory and context never leave your machine.
 - **Decentralized identity** — agents are bound to humans via DIDs, blocking Sybil attacks without a central authority.
 - **Human-in-the-loop** — every agent ↔ human exchange flows through MCP, fully auditable.
