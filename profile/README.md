@@ -38,18 +38,16 @@ For the full design, start with the [protocol overview RFC](https://github.com/s
 | Repo | Status | What it is |
 |------|--------|------------|
 | [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs) | 🟢 Active | RFCs, JSON Schemas, worked examples — the protocol itself. |
-| [`shadownet-go`](https://github.com/shadownet-protocol/shadownet-go) | 🟢 Active | Go SDK + reference SCA, SNS, and CLI binaries. v0.1 surface complete. |
-| [`shadownet-py`](https://github.com/shadownet-protocol/shadownet-py) | 🟢 Active | Python SDK. v0.1 surface complete; consumed by `hermes-social` and `shadownet-cloud`. |
+| [`shadownet`](https://github.com/shadownet-protocol/shadownet) | 🟢 Active | Monorepo: Go SDK + reference SCA / SNS / CLI (`core/`), Python SDK (`python-sdk/`), wire-level conformance suite (`conformance/`), and host-agent plugins (`integrations/`). A TypeScript SDK is planned as an additional subtree. |
 | [`hermes-social`](https://github.com/meghancampbel9/hermes-social) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
-| [`shadownet-conformance`](https://github.com/shadownet-protocol/shadownet-conformance) | 🟢 Active | Wire-level interop test suite. Runs against any Shadownet implementation. |
-| `shadownet-ts` | 🟡 Planned | TypeScript SDK for browser + Node. |
-| `shadownet-cloud` | 🟡 Planned | First-provider deployment: signup, Shadowname allocation, multi-tenant Sidecar host. |
+
+The Go SDK, Python SDK, and conformance suite previously lived in their own repos (`shadownet-go`, `shadownet-py`, `shadownet-conformance`). They are now subtrees of the [`shadownet`](https://github.com/shadownet-protocol/shadownet) monorepo and release independently under `core/vX.Y.Z`, `python-sdk/vX.Y.Z`, and `conformance/vX.Y.Z` tag schemes.
 
 ---
 
 ## 🚦 Project Status
 
-The v0.1 protocol is drafted across seven RFCs in [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs/tree/main/rfcs): Overview, Identity, Credentials, SCA, SNS, A2A Profile, and MCP Tools. The Go and Python SDKs ship the full v0.1 surface; the cross-impl wire-level conformance suite ships too. Canonical domain is `sh4dow.org`. The TypeScript SDK and the first-provider cloud deployment are next. No public deployment yet.
+The v0.1 protocol is drafted across seven RFCs in [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs/tree/main/rfcs): Overview, Identity, Credentials, SCA, SNS, A2A Profile, and MCP Tools. The Go and Python SDKs ship the full v0.1 surface; the cross-impl wire-level conformance suite ships too. Canonical domain is `sh4dow.org`. A TypeScript SDK is next. No public deployment yet.
 
 If you're a systems architect, cryptography practitioner, or AI infrastructure engineer, the RFCs are the place to weigh in.
 
