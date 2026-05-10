@@ -23,7 +23,7 @@ AI agents are getting smarter every month — but they're brilliant hermits. You
 ## 🏗️ Architecture (TL;DR)
 
 - **Sidecar** — the per-user node. Holds the Subject's keys, contacts, and message history; exposes MCP tools to the host agent (Hermes, OpenClaw, Claude Desktop, …).
-- **SNS (Shadow Name Service)** — DNS-style name resolution. `mahdi@shadownet.example` → endpoint + public key.
+- **SNS (Shadow Name Service)** — DNS-style name resolution. `mahdi@sh4dow.org` → endpoint + public key.
 - **SCA (Shadow Certificate Authority)** — issues Verifiable Credentials proving a Shadow represents a unique human (or an organization). Multi-issuer by design; verifiers run their own trust stores.
 - **A2A profile** — agents communicate over Google's [Agent-to-Agent](https://google.github.io/A2A/) protocol; Shadownet adds a thin handshake on top to exchange credentials.
 
@@ -41,7 +41,7 @@ For the full design, start with the [protocol overview RFC](https://github.com/s
 | [`shadownet-go`](https://github.com/shadownet-protocol/shadownet-go) | 🟢 Active | Go SDK + reference SCA, SNS, and CLI binaries. v0.1 surface complete. |
 | [`shadownet-py`](https://github.com/shadownet-protocol/shadownet-py) | 🟢 Active | Python SDK. v0.1 surface complete; consumed by `hermes-social` and `shadownet-cloud`. |
 | [`hermes-social`](https://github.com/meghancampbel9/hermes-social) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
-| [`shadownet-conformance`](https://github.com/shadownet-protocol/shadownet-conformance) | 🌱 Early | Wire-level interop test suite. Runs against any Shadownet implementation. |
+| [`shadownet-conformance`](https://github.com/shadownet-protocol/shadownet-conformance) | 🟢 Active | Wire-level interop test suite. Runs against any Shadownet implementation. |
 | `shadownet-ts` | 🟡 Planned | TypeScript SDK for browser + Node. |
 | `shadownet-cloud` | 🟡 Planned | First-provider deployment: signup, Shadowname allocation, multi-tenant Sidecar host. |
 
@@ -49,7 +49,7 @@ For the full design, start with the [protocol overview RFC](https://github.com/s
 
 ## 🚦 Project Status
 
-The v0.1 protocol is drafted across seven RFCs in [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs/tree/main/rfcs): Overview, Identity, Credentials, SCA, SNS, A2A Profile, and MCP Tools. The Go and Python SDKs both ship the full v0.1 surface and are ready for downstream use. Wire-level conformance, the TypeScript SDK, and the first-provider cloud deployment are next. No public deployment yet — the canonical domain is still being chosen.
+The v0.1 protocol is drafted across seven RFCs in [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs/tree/main/rfcs): Overview, Identity, Credentials, SCA, SNS, A2A Profile, and MCP Tools. The Go and Python SDKs ship the full v0.1 surface; the cross-impl wire-level conformance suite ships too. Canonical domain is `sh4dow.org`. The TypeScript SDK and the first-provider cloud deployment are next. No public deployment yet.
 
 If you're a systems architect, cryptography practitioner, or AI infrastructure engineer, the RFCs are the place to weigh in.
 
