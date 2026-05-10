@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# JetBrains IDEs
+.idea/
+
+# VS Code
+.vscode/
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# zsh
+.zsh_history
+.zcompdump*
+.zsh_sessions/
+
+# Editor backups / temp
+*.bak
+*.tmp
+*.orig
