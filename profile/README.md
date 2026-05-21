@@ -39,7 +39,7 @@ For the full design, start with the [protocol overview RFC](https://github.com/s
 |------|--------|------------|
 | [`shadownet-specs`](https://github.com/shadownet-protocol/shadownet-specs) | 🟢 Active | RFCs, JSON Schemas, worked examples — the protocol itself. |
 | [`shadownet`](https://github.com/shadownet-protocol/shadownet) | 🟢 Active | Monorepo: Go SDK + reference SCA / SNS / CLI (`core/`), Python SDK (`python-sdk/`), wire-level conformance suite (`conformance/`), and host-agent plugins (`integrations/`). A TypeScript SDK is planned as an additional subtree. |
-| [`hermes-social`](https://github.com/meghancampbel9/hermes-social) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
+| [`shadownet-local`](https://github.com/shadownet-protocol/shadownet-local) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
 
 The Go SDK, Python SDK, and conformance suite previously lived in their own repos (`shadownet-go`, `shadownet-py`, `shadownet-conformance`). They are now subtrees of the [`shadownet`](https://github.com/shadownet-protocol/shadownet) monorepo and release independently under `core/vX.Y.Z`, `python-sdk/vX.Y.Z`, and `conformance/vX.Y.Z` tag schemes.
 
