@@ -40,6 +40,7 @@ For the full design, start with the [consolidated wire spec (RFC 0001)](https://
 | [`shadownet`](https://github.com/shadownet-protocol/shadownet) | 🟢 Active | Monorepo: Go SDK + reference provider & issuer binaries (`core/`), Python SDK (`python-sdk/`), wire-level conformance suite (`conformance/`), and host-agent integrations (`integrations/`). |
 | [`shadownet-local`](https://github.com/shadownet-protocol/shadownet-local) | 🟢 Active | Sidecar reference implementation. Drop-in for any A2A-capable agent runtime. |
 | [`hermes-plugin`](https://github.com/shadownet-protocol/hermes-plugin) | 🟢 Active | One-line install shim for [Hermes Agent](https://github.com/NousResearch/hermes-agent). Bootstraps the real adapter from PyPI. |
+| [`shadowbox`](https://github.com/shadownet-protocol/shadowbox) | 🟢 Active | Standalone all-in-one implementation — no sidecar, no server/client, everything in one box. A TUI playground for experimenting with the protocol and its proposals. |
 
 The Go SDK, Python SDK, and conformance suite previously lived in their own repos (`shadownet-go`, `shadownet-py`, `shadownet-conformance`). They are now subtrees of the [`shadownet`](https://github.com/shadownet-protocol/shadownet) monorepo and release independently under `core/vX.Y.Z`, `python-sdk/vX.Y.Z`, and `conformance/vX.Y.Z` tag schemes. Legacy repos remain readable for the `v0.1.x` release series.
 
